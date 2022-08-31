@@ -1,14 +1,16 @@
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #3EC1D3;
+h1{
+    color: blue;
+    text-align:center;
+}
+h2{
+    color: black;
+    text-align:left;
     padding: 20px;
-    color: aliceblue;
 }
 nav{
     background-color: #FF9A00;
     color: beige;
+
 }
 section{
     display: grid;
