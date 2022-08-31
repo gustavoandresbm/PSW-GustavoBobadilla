@@ -1,0 +1,85 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #3EC1D3;
+    padding: 20px;
+    color: aliceblue;
+}
+nav{
+    background-color: #FF9A00;
+    color: beige;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+article{
+    justify-content: space-between;
+    background-color: #F6F7D7;
+    grid-column: 1/4;
+
+}
+aside{
+    background-color: beige;
+    padding: 30px;
+    grid-column: 4/5;
+}
+footer{
+    background-color: #FF165D;
+    color: beige;
+    padding: 10px;
+}
+
+.menu{
+    padding: 0px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.menu>li{
+    float: left;
+}
+
+.menu li a{
+    background-color: #FF9A00;
+    color: beige;
+    text-decoration: none;
+    padding: 20px 80px;
+    display: block;
+}
+
+.menu li a:hover{
+    background-color: chocolate;
+}
+
+.menu li ul{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    min-width: 140px;
+}
+
+.menu li:hover > ul{
+    display: block;
+}
+
+.menu li ul li{
+    position: relative;
+}
+
+.menu li ul li ul{
+    right: 140px;
+}
+
+@media screen and (max-width:768px) {
+    header {
+        flex-direction: column;
+    }    
+}
